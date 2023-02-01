@@ -51,7 +51,7 @@ public static String testableHtml(PageData pageData, boolean includeSuiteSetup) 
 Muhtemelen 3 dakika içinde neler döndüğünü çözemediniz.
 
 Bir kaç metot sadeleştirmesi, bir kaç yeniden adlandırma ve yeniden yapılandırmadan (refactoring) sonra kodu şu şekle getirebildim:
-
+```
 public static String renderPageWithSetupsAndTeardowns(PageData pageData, boolean isSuite) throws Exception {
     boolean isTestPage = pageData.hasAttribute("Test");
     if (isTestPage) {
@@ -64,6 +64,7 @@ public static String renderPageWithSetupsAndTeardowns(PageData pageData, boolean
     }
     return pageData.getHtml();
 }
+```
 Son dokunuşlardan sonra ise şu hale geldi:
 ```
 public static String renderPageWithSetupsAndTeardowns(PageData pageData, boolean isSuite) throws Exception {
