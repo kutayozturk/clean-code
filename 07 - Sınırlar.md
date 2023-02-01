@@ -129,7 +129,7 @@ Birkaç yıl önce, bir radyo iletişim sistemi için yazılım geliştiren bir 
 
 Dünyamızın nerede bittiğini ve yenisinin nerede başladığını oldukça iyi biliyorduk. Çalışırken bazen bu sınıra karşı koyduk. Sisler ve cehalet bulutları sınırların ardını gizlese de, çalışmalarımız sınır arayüzünün nasıl olmasını gerektiğini farketmemizi sağladı. Transmitter’dan şöyle bir beklentimiz vardı:
 
-“Vericiyi verilen frekansta tuşla ve bu akıştan gelen verilerin analog bir temsilini yayınla.”
+*“Vericiyi verilen frekansta tuşla ve bu akıştan gelen verilerin analog bir temsilini yayınla.”*
 
 API’nin henüz tasarlanmamış olması nedeniyle nasıl yapılacağını bilmiyorduk. Bu yüzden detayları daha sonra çözmeye karar verdik.
 
