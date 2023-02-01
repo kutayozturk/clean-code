@@ -132,16 +132,18 @@ Fonksiyon, izin verilen fonksiyonlardan herhangi biri tarafından dönen nesnele
 
 
 Apache’de bir yerlerde bulduğum aşağıdaki kod bu kuralı ihlal ediyor. Çünkü getOptions()’dan dönen nesne ile getScratchDir() metodunu, getScratchDir()’den dönen değer ile de getAbsolutePath() metodunu çağırıyor.
-
+```
 final String outputDir = ctxt.getOptions().getScratchDir().getAbsolutePath();
-Tren Enkazları
+```
+## Tren Enkazları
 Uç uca geçmiş bir dizi tren vagonu gibi birbirini çağıran fonksiyonlar için bu benzetme yapılır. Bu tür kodları parçalara ayırmak en iyisidir.
 
 Şu koda bir bakalım:
-
+```
 Options opts = ctxt.getOptions();
 File scratchDir = opts.getScratchDir();
 final String outputDir = scratchDir.getAbsolutePath();
+```
 Bu koddaki ikinci ve üçünü satırlar Demeter Kuralı’nı ihlal ediyorlar mı? Kesinlikle. Bu kodun Demeter Kuralı’nı ihlal edip etmediği; ctxt, opts ve scratchDir’in nesne ya da veri yapısı olup olmamasına bağlıdır. Eğer nesneyseler, o zaman iç yapıları saklanmalıdır. Yani iç yapılarının biliniyor oluşu açıkça bir ihlaldir. Diğer bir taraftan hiçbir davranış sergilemeyen veri yapıları iseler, o zaman doğal olarak iç yapılarını açık ediyorlar yani Demeter Kuralı’nı ihlal ediyorlardır.
 
 Erişimci fonksiyonların kullanımı meseleyi karıştırır. Eğer kod şu şekilde yazılmış olsaydı, muhtemelen Demeter Kuralı’nı sorgulamayacaktık:
