@@ -246,13 +246,12 @@ Ayırmak istediğimiz üç test fonksiyonu muhtemelen şu şekilde olmalıdır:
 
 Elimizde 31 günü olan aylardan birinin son günü olsun (örneğin 31 Mayıs);
 
-1) 30 günü olan bir ay eklediğimizde (Haziran gibi), tarih ayın 31'i değil 30'u olmalıdır.
-
-2) İki ay eklediğimizde, ikinci ayın 31 günü varsa , tarih ayın 31'i olmalıdır.
+- 30 günü olan bir ay eklediğimizde (Haziran gibi), tarih ayın 31'i değil 30'u olmalıdır.
+- İki ay eklediğimizde, ikinci ayın 31 günü varsa , tarih ayın 31'i olmalıdır.
 
 Elimizde 30 günü olan aylardan birinin son günü olsun;
 
-3) 31 günü olan bir ay eklediğimizde tarih ayın 31'i değil 30'u olmalıdır.
+- 31 günü olan bir ay eklediğimizde tarih ayın 31'i değil 30'u olmalıdır.
 
 Yani soruna neden olan şey birden fazla assert ifadesi değil. Aksine, test edilen birden fazla konseptin olmasıdır. Bu nedenle en iyi kural, konsept başına assert sayısını en aza indirgemek ve test fonksiyonu başına sadece bir konsept test etmektir.
 
