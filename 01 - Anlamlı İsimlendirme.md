@@ -1,4 +1,5 @@
 # Clean Code (Temiz Kod)
+![](https://miro.medium.com/max/720/1*2B2WMc4Q4-JQLAFVHMUXjw.webp)
 > İyi isim seçmek zaman alır, ancak uzun vadede daha çok zaman kazandırır.
 
 Her şeye bir isim veririz; değişkenlerimize, fonksiyonlarımıza, argümanlarımıza, sınıflarımıza ve paketlerimize. O kadar çok isimlendirme yaparız ki, bunu iyi yapsak iyi olur aslında.
